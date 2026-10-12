@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ConcertPass | Live Music Tickets</title>
+<style>
+:root{--gold:#f5c451;--bg:#090909;--panel:#151515;--muted:#aaa;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{max-width:1120px;margin:auto;padding:0 22px}
+header{border-bottom:1px solid #292929;background:#0b0b0b;position:sticky;top:0;z-index:2}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{font-weight:900;font-size:25px;letter-spacing:-1px}.logo span{color:var(--gold)}
+nav{display:flex;gap:22px;color:#ddd;font-size:14px}.btn{display:inline-block;background:var(--gold);color:#111;font-weight:800;border-radius:8px;padding:12px 17px;border:0;cursor:pointer}
+.hero{padding:70px 0 58px;background:radial-gradient(ellipse at 75% 30%,#44320f 0,#19140a 25%,#090909 66%)}
+.eyebrow{color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:12px}
+h1{font-size:clamp(42px,7vw,76px);line-height:.99;letter-spacing:-3px;max-width:720px;margin:17px 0}
+.hero p{color:#ccc;max-width:560px;line-height:1.7;font-size:17px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn-outline{border:1px solid #555;border-radius:8px;padding:12px 17px;font-weight:700}
+.trust{display:flex;gap:25px;flex-wrap:wrap;color:#c7c7c7;font-size:13px;margin-top:30px}
+section{padding:48px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:23px}.section-head h2{font-size:30px;margin:8px 0 0}.section-head p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid #2b2b2b;border-radius:14px;overflow:hidden}
+.art{height:150px;padding:18px;display:flex;align-items:end;font-size:24px;font-weight:900;letter-spacing:-1px;background:linear-gradient(135deg,#5b3216,#17100c 70%)}
+.art.two{background:linear-gradient(135deg,#202d47,#0b0c12 75%)}.art.three{background:linear-gradient(135deg,#4d2026,#12090b 75%)}
+.cardbody{padding:18px}.tag{color:var(--gold);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px}
+.card h3{margin:9px 0;font-size:20px}.details{color:#bbb;font-size:13px;line-height:1.7}.price-row{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #303030;margin-top:15px;padding-top:15px}.price{font-size:20px;font-weight:900}.price small{font-size:11px;color:#aaa;font-weight:400}
+.notice{border:1px solid #3a321f;background:#151208;padding:16px 18px;border-radius:10px;color:#d9d0b5;font-size:13px;line-height:1.6;margin-top:22px}
+.payments{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.pill{border:1px solid #3a3a3a;border-radius:7px;padding:10px 13px;color:#ddd;font-size:13px;background:#111}
+footer{border-top:1px solid #292929;padding:30px 0;color:#999;font-size:13px}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+@media(max-width:760px){nav{display:none}.grid{grid-template-columns:1fr}.hero{padding-top:52px}.section-head{align-items:start;flex-direction:column}h1{letter-spacing:-2px}.art{height:125px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="logo" href="#">Concert<span>Pass</span></a><nav><a href="#events">Concerts</a><a href="#how">How it works</a><a href="#payments">Payments</a></nav><a class="btn" href="#events">Find tickets</a></div></header>
+<main>
+<section class="hero"><div class="wrap"><div class="eyebrow">Your night. Your music. Your pass.</div><h1>LIVE MUSIC.<br><span style="color:var(--gold)">UNFORGETTABLE</span><br>NIGHTS.</h1><p>Discover upcoming concerts, explore event details, and find your next live-music experience with ConcertPass.</p><div class="hero-actions"><a class="btn" href="#events">Explore concerts →</a><a class="btn-outline" href="#how">How booking works</a></div><div class="trust"><span>✓ Clear event details</span><span>✓ Secure checkout when enabled</span><span>✓ Booking support</span></div></div></section>
+<section id="events"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Make a night of it</div><h2>Featured events</h2></div><p>Sample listings — verify dates and ticket availability before publishing.</p></div>
+<div class="grid">
+<article class="card"><div class="art">COUNTRY NIGHT</div><div class="cardbody"><div class="tag">Country · Sample listing</div><h3>Dustin Lynch — Live</h3><div class="details">The Event at Graton Resort & Casino<br>Rohnert Park, California<br>Friday · October 23 · 8:00 PM</div><div class="price-row"><div class="price">From $— <small>ticket price to be added</small></div><a class="btn" href="#how">Details</a></div></div></article>
+<article class="card"><div class="art two">FESTIVAL SEASON</div><div class="cardbody"><div class="tag">Festival · Sample listing</div><h3>Faultline Festival</h3><div class="details">Morongo Field<br>Rancho Cucamonga, California<br>Two-day festival · Dates to verify</div><div class="price-row"><div class="price">From $— <small>ticket price to be added</small></div><a class="btn" href="#how">Details</a></div></div></article>
+<article class="card"><div class="art three">LIVE & LOUD</div><div class="cardbody"><div class="tag">Live music · Sample listing</div><h3>More shows coming soon</h3><div class="details">Browse the lineup, compare event details, and choose the show that suits your plans.</div><div class="price-row"><div class="price">Coming soon</div><a class="btn" href="#how">How it works</a></div></div></article>
+</div>
+<div class="notice"><strong>Preview only:</strong> these sample cards do not sell tickets yet. Confirm the event, venue, date, ticket inventory, and your authorization to sell before publishing any listing.</div>
+</div></section>
+<section id="how"><div class="wrap"><div class="eyebrow">Simple by design</div><h2>Booking should feel easy.</h2><div class="grid" style="margin-top:22px"><div class="card cardbody"><div class="tag">01</div><h3>Choose your show</h3><div class="details">Customers review the event, venue, date, and ticket type.</div></div><div class="card cardbody"><div class="tag">02</div><h3>Pay securely</h3><div class="details">A connected payment provider processes supported payment methods through checkout.</div></div><div class="card cardbody"><div class="tag">03</div><h3>Get confirmation</h3><div class="details">After payment is verified, the system can send an order confirmation and valid ticket details.</div></div></div></div></section>
+<section id="payments"><div class="wrap"><div class="eyebrow">Checkout options</div><h2>Payment methods</h2><p style="color:#aaa;max-width:700px;line-height:1.7">Your final checkout can offer supported methods after payment-provider setup and approval. Availability depends on your account, location, and transaction type.</p><div class="payments"><span class="pill">Credit cards</span><span class="pill">Debit cards</span><span class="pill">PayPal</span><span class="pill">Apple Pay</span><span class="pill">Google Pay</span><span class="pill">Cash App*</span><span class="pill">Venmo*</span><span class="pill">Bank payment*</span><span class="pill">Zelle — manual only*</span></div><div class="notice">*Not all methods can be combined in one checkout. Zelle is generally a manual payment option rather than an integrated ticket checkout. Do not issue tickets until payment is independently verified.</div></div></section>
+</main>
+<footer><div class="wrap foot"><div><a class="logo" href="#">Concert<span>Pass</span></a><div style="margin-top:8px">Find your next live-music moment.</div></div><div>Website preview · Not yet accepting payments</div></div></footer>
+</body></html>
